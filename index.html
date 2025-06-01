@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memo Zubieta</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link rel="icon" href="./Images/logobl.png" type="image/x-icon">
+    <script src="script.js" defer></script>
+</head>
+<body class="body">
+
+    <header class="header">
+
+        <div class="logo">
+            <img src="Images/logowl.png"  alt="logo">
+        </div>
+        
+        <nav role="navigation" aria-label="Main navegation"> 
+            <ul> 
+                <li><a href="#aboutme">About me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact-section">Contact Me</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="main">
+
+        <section class="aboutme" id="aboutme">
+
+            <div id="myname"><h1>Guillermo Zubieta</h1></div>
+
+            <h2>Full Stack Developer</h2>
+
+            <h3>Industrial Engieener & UX/UI designer</h3>
+            <p>In this webpage you will find a little bit more about my studies, skills and projects I have worked on as a developer, I hope you like my work!!!</p>
+        <a href="./assets/GZResume.pdf" target="_blank" class="resume-link" title="Open Resume">
+            <button class="resume-button">Resume</button>
+        </a>
+        </section>
+
+        <section class="myskills" id="myskills">
+            
+            <div>
+                <h2>My Skills</h2>
+                <p class="skillinfo">If you want to know what each language or tool is about, you can click on its logo</p>
+            </div>
+            <div class="skills-container">
+                <div class="skill" onclick="showModal('html')">
+                    <img src="./Images/html.png" alt="HTML" class="skill-img">
+                    <p>HTML</p>
+                </div>
+                <div class="skill" onclick="showModal('css')">
+                    <img src="./Images/css.png" alt="CSS" class="skill-img">
+                    <p>CSS</p>
+                </div>
+                <div class="skill" onclick="showModal('javascript')">
+                    <img src="./Images/javascript.png" alt="JavaScript" class="skill-img">
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill" onclick="showModal('nodejs')">
+                    <img src="./Images/nodejs.png" alt="Node.js" class="skill-img">
+                    <p>Node.js</p>
+                </div>
+                <div class="skill" onclick="showModal('react')">
+                    <img src="./Images/react.png" alt="React" class="skill-img">
+                    <p>React</p>
+                </div>
+                <div class="skill" onclick="showModal('illustrator')">
+                    <img src="images/adobei.png" alt="Adobe Illustrator" class="skill-img">
+                    <p>Adobe Illustrator</p>
+                </div>
+                <div class="skill" onclick="showModal('figma')">
+                    <img src="images/figma.png" alt="Figma" class="skill-img">
+                    <p>Figma</p>
+                </div>
+                <div class="skill" onclick="showModal('git')">
+                    <img src="images/git.png" alt="Git" class="skill-img">
+                    <p>Git</p>
+                </div>
+                <div class="skill" onclick="showModal('uxui')">
+                    <img src="images/uxui.png" alt="UX/UI" class="skill-img">
+                    <p>UX/UI</p>
+                </div>
+            </div>
+        </section>
+        <div id="skillModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal()">&times;</span>
+                <h3 id="modalTitle"></h3>
+                <p id="modalDescription"></p>
+            </div>
+        </div>
+
+
+        <section class="projects" id="projects">
+            <h2>My Projects</h2>
+            
+            <div class="projects-container">
+
+                <div class="project-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="./assets/Projects/1game-of-pig.png" alt="Project 1" class="project-logo">
+                        </div>
+                        <div class="card-back">
+                            <h3>Game of Pig</h3>
+                            <p>This is a simple JavaScript game that rolls two dice and updates the score until a winner is declared.</p>
+                        </div>
+                    </div>
+                    <a href="" target="_blank">View Project</a>
+                </div>
+        
+                <div class="project-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="./assets/Projects/2reservations-proyect.png" alt="Project 2" class="project-logo">
+                        </div>
+                        <div class="card-back">
+                            <h3>Reservations Project</h3>
+                            <p>This is a theater reservation website, showing occupied, available and selected seats.</p>
+                        </div>
+                    </div>
+                <a href="" target="_blank">View Project</a>
+                </div>
+        
+                <div class="project-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="./assets/Projects/3vacations.png" alt="Project 3" class="project-logo">
+                        </div>
+                        <div class="card-back">
+                            <h3>Vacations</h3>
+                            <p>This is a website that allows you to create a list of vacation destinations or hotels to plan your vacation.</p>
+                        </div>
+                    </div>
+                 <a href="" target="_blank">View Project</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="./assets/Projects/4units-converter.png" alt="Project 4" class="project-logo">
+                        </div>
+                        <div class="card-back">
+                            <h3>Units Converter</h3>
+                            <p>This is a simple unit converter between miles and kilometers.</p>
+                        </div>
+                    </div>
+                 <a href="" target="_blank">View Project</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="./assets/Projects/5pets-coments.png" alt="Project 5" class="project-logo">
+                        </div>
+                        <div class="card-back">
+                            <h3>Pets Coments</h3>
+                            <p>A page in which it shows the comment left by a customer and rotates between comments every so often.</p>
+                        </div>
+                    </div>
+                 <a href="" target="_blank">View Project</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="./assets/Projects/6sliders.jpeg" alt="Project 6" class="project-logo">
+                        </div>
+                        <div class="card-back">
+                            <h3>Sliders</h3>
+                            <p>A page in which different slides are shown and you can change them by clicking on the next or previous buttons.</p>
+                        </div>
+                    </div>
+                 <a href="" target="_blank">View Project</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="./assets/Projects/7tab-change.png" alt="Project 7" class="project-logo">
+                        </div>
+                        <div class="card-back">
+                            <h3>Tab Change</h3>
+                            <p>In this project, three pestanias are shown and clicking on them changes the displayed text.</p>
+                        </div>
+                    </div>
+                 <a href="" target="_blank">View Project</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="./assets/Projects/8smooth-scroller.png" alt="Project 8" class="project-logo">
+                        </div>
+                        <div class="card-back">
+                            <h3>Smooth Scroller</h3>
+                            <p>This page uses Js in order to achieve a smooth scroller when clicking on the tabs and scrolling to the content.</p>
+                        </div>
+                    </div>
+                 <a href="" target="_blank">View Project</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="./assets/Projects/9basic-slider-jquery.jpeg" alt="Project 9" class="project-logo">
+                        </div>
+                        <div class="card-back">
+                            <h3>Slider (JQuery) </h3>
+                            <p>A basic page that displays pictures and changes them when clicking on the next and previous buttons using Jquery.</p>
+                        </div>
+                    </div>
+                 <a href="" target="_blank">View Project</a>
+                </div>            
+                
+            </div>
+        </section>
+
+        <section class="education" id="education">
+            <h2>My Education</h2>
+            
+            <div class="education-container">
+                <div class="education-card">
+                    <img src="./Images/26690.jpg" alt="Full Stack Engineering" class="education-logo">
+                    <p>Full-Stack Engineer (currently studying)</p>
+                    <p>Codecademy</p>
+                </div>
+                
+                <div class="education-card">
+                    <img src="./Images/meta-front-end-developer.png" alt="Front-End Development" class="education-logo">
+                    <p>Front-End Development Professional Certificate</p>
+                    <p>Meta - Coursera</p>
+                </div>
+                
+                <div class="education-card">
+                    <img src="./Images/google-ux-design.png" alt="UX/UI Design" class="education-logo">
+                    <p>UX/UI Design Professional Certificate</p>
+                    <p>Google - Coursera</p>
+                </div>
+                
+                <div class="education-card">
+                    <img src="./Images/google-project-management.png" alt="Project Management" class="education-logo">
+                    <p>Project Management Professional Certificate</p>
+                    <p>Google - Coursera</p>
+                </div>
+                
+                <div class="education-card">
+                    <img src="./Images/degree.png" alt="Industrial Engineering" class="education-logo1">
+                    <p>Industrial Engineer</p>
+                    <p>Bachelor Degree - Universidad el Bosque, Colombia</p>
+                </div>         
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact-section">          
+            <div class="contact-container">
+            <h2 class="contact-title">Let’s work together</h2>
+              <div class="contact-form">
+                <form>
+                  <input type="text" placeholder="Your Name" required>
+                  <input type="email" placeholder="Your Email" required>
+                  <textarea placeholder="Your Message" rows="6" required></textarea>
+                  <button type="submit">Send</button>
+                </form>
+              </div>
+          
+              <div class="contact-info">
+                <p>
+                  I’m always open to new opportunities, freelance projects, or simply connecting with other developers and creatives. Don’t hesitate to reach out!
+                </p>
+                <div class="social-links">
+                  <a href="https://github.com/tuusuario" target="_blank" aria-label="GitHub" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/in/gzubieta/" target="_blank" aria-label="LinkedIn" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+          </section>
+        
+    </main>
+
+    <footer class="footer" id="footer">
+        <p>Designed by Guillermo Zubieta - 2025</p>
+        <a href="#contact-section" class="footer-link">Contact me</a>
+    </footer>
+</body>
+</html>
