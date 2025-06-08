@@ -85,3 +85,19 @@ document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
         }
     });
 }); 
+
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('nav ul');
+const navLinks = document.querySelectorAll('nav ul li a');
+
+
+  hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('show');
+  });
+
+  // Cierra el menú al hacer clic en cualquier enlace
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('show');
+    });
+  });

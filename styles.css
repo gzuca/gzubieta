@@ -156,7 +156,7 @@ main {
 
 /*sections*/
 section {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 section h2 {
@@ -180,6 +180,7 @@ section h2 {
     max-width: 800px;
     margin-top: 1rem;
     color: #ddd;
+    text-align: center;
 }
 
 
@@ -189,6 +190,7 @@ section h2 {
     gap: 1rem;
     justify-items: center;
     padding: 0 2rem;
+    margin-top: 25px;
 }
 
 .skill {
@@ -224,8 +226,6 @@ section h2 {
     padding: 50px 0;
     margin-bottom: 2rem;
 }
-
-
 
 
 .projects-container {
@@ -552,4 +552,130 @@ footer a:hover {
 
 .close-btn:hover {
     color: var(--color-button);
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: var(--color-accent2);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+    display: block;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    z-index: 1100;
+  }
+
+  .resume-button {
+        width: 100%; 
+        font-size: 1rem;
+        padding: 0.8rem; 
+        box-sizing: border-box;
+    }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--color-primary);
+    position: absolute;
+    top: 70px;
+    left: 0;
+    z-index: 1000;
+    padding: 1rem 0;
+    border-top: 1px solid var(--color-secondary);
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  nav li {
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+
+
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .logo img {
+    height: 40px;
+  }
+
+  .aboutme h1 {
+    font-size: 2rem;
+  }
+
+  .aboutme h2 {
+    font-size: 1.5rem;
+  }
+
+  .aboutme h3 {
+    font-size: 1.2rem;
+  }
+
+  .aboutme p {
+    padding: 0 1rem;
+    font-size: 0.95rem;
+  }
+
+
+  .contact-container {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+
+  .contact-form,
+  .contact-details,
+  .contact-info {
+    width: 100%;
+  }
+
+
+  footer {
+    padding: 1rem 0.5rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 415px) {
+  .contact-container {
+    padding: 2rem 1rem;
+    flex-direction: column;
+  }
+
+  .contact-form,
+  .contact-details,
+  .contact-info {
+    min-width: 100%;
+    padding: 0;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 1rem;
+    padding: 0.7rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .contact-form button {
+    width: 100%;
+  }
+
+  .social-links {
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
 }
