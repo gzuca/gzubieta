@@ -2,7 +2,7 @@ export const formations =[
     {
         title:"Full-Stack Engineer (currently studying)",
         institution:"Codecademy",
-        image:"/Comingsoon.jpg",
+        image:"/comingsoon.jpg",
     },
     {
         title:"Front-End Development Professional Certificate",
