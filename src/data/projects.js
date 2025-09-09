@@ -11,7 +11,7 @@ export const projects =[
         title:"To-Do List",
         description:"This is a React web application that lets users create, view, and complete tasks efficiently. It features a clean, responsive interface and includes interactive filter buttons. The project demonstrates the use of React hooks like useState and useEffect, global state management with Context API, and persistent data with localStorage, highlighting frontend development skills.",
         image:"/To-Do-List.png",
-        url:"https://todolist-htfzbd36f-guillermo-zubietas-projects.vercel.app/"
+        url:"https://todolist-eight-pi-72.vercel.app/"
     },
 
     {
