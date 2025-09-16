@@ -11,7 +11,7 @@ function Hero() {
           Welcome to my portfolio! Here you'll find more information about my background, skills, and the projects I've worked on as a developer. I hope you enjoy exploring my work!
         </p>
         <a
-          href="/public/Guillermo_Zubieta_Resume.pdf"
+          href="/Guillermo_Zubieta_Resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="hero-button"
